@@ -15,6 +15,7 @@
   <div class="window">
     <div class="title-bar">
       <div class="title-bar-text">My Bio</div>
+
       <div class="title-bar-controls">
         <button aria-label="Minimize"></button>
         <button aria-label="Maximize" disabled></button>
@@ -38,6 +39,7 @@
     </div>
   </div>
 <!-- music player-->
+<!-- code stole and modified from https://re-nata.neocities.org/music - music player 3-->
 <style>
 .player {
     width: fit-content;
@@ -400,19 +402,6 @@
     border: 2px solid transparent;
 }
 
-.player .songtitlearrow {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url(https://files.catbox.moe/f5e8np.png);
-    height: 21px;
-    width: 21px;
-    position: relative;
-    top: 2px;
-    left: -2px;
-    border: 0px solid transparent;
-    border-width: 0px 0px 0px 0px;
-}
-
 .player .songtitle {
     padding: 5px;
     /* padding around song title */
@@ -472,7 +461,7 @@
       <div class="title-bar">
         <div class="title-bar-text">
           <sub>
-            <img class="titlebaricon" src="https://files.catbox.moe/tg55zp.png" alt="cd player icon">
+            <img class="titlebaricon" src="/98icons/cd_audio_cd-0.png" alt="cd player icon">
           </sub>
           CD player
         </div>
@@ -485,7 +474,7 @@
       <div class="window-body">
         <div class="flex">
           <div id="imagestyle">
-            <img class="ic" src="https://i.etsystatic.com/11348985/r/il/9597b7/5123050386/il_1588xN.5123050386_eqou.jpg" alt="momo icon">
+            <img class="ic" src="/player/kirby.gif" alt="kirby time!" style="max-width:75%; position:relative; top:5px;">
           </div>
           <div id="musicplayer">
             <div class="songtitlewindow">
@@ -551,24 +540,12 @@ let curr_track = document.getElementById("music");
 // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
 let track_list = [
 {
-name: "Animal Crossing - Relaxing and Rain",
-path: "https://files.catbox.moe/nwewpp.mp3"
+name: "Cuba Baion - Techmoan Tefi Version",
+path: "https://files.catbox.moe/dnenkj.mp3"
 },
 {
-name: "Shooting Arrows - The Cat's Whiskers",
-path: "https://files.catbox.moe/zj81lr.mp3"
-},
-{
-name: "4 REAL - The Cat's Whiskers",
-path: "https://files.catbox.moe/fxd8fo.mp3"
-},
-{
-name: "My Sweetest Love - The Cat's Whiskers ft. Kazuma Mitchell",
-path: "https://files.catbox.moe/qe4he5.mp3"
-},
-{
-name: "Mercy On Me - The Cat's Whiskers",
-path: "https://files.catbox.moe/w7nnf9.mp3"
+name: "Test Track - Disney World",
+path: "https://files.catbox.moe/w8j8ot.mp3"
 }
 ];
 //
